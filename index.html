@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Santiago Guzmán · QA Automation Engineer</title>
+<meta name="description" content="Portfolio de Santiago Guzmán, QA Automation Engineer. Proyectos de testing, automatización web y mobile con Python, Playwright y Appium.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="noise-overlay"></div>
+
+<header class="site-header" id="top">
+  <nav class="nav container">
+    <a href="#top" class="logo">SG<span class="logo-dot">.</span><span class="logo-tag">qa</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#experience">Experiencia</a></li>
+      <li><a href="#skills">Habilidades</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#contact" class="nav-cta">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero container">
+    <div class="hero-content">
+      <p class="eyebrow"><span class="status-dot"></span> Disponible para nuevas oportunidades</p>
+      <h1>Santiago Guzmán</h1>
+      <p class="hero-role">QA Automation Engineer</p>
+      <p class="hero-desc">
+        Diseño estrategias de calidad y automatizo pruebas web &amp; mobile con
+        <strong>Python, Playwright y Appium</strong>. Actualmente exploro arquitecturas de
+        <strong>QA Agéntico con IA</strong> — self-healing tests, RAG y reducción de falsos negativos
+        en pipelines de CI/CD.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">Ver proyectos</a>
+        <a href="#contact" class="btn btn-ghost">Contactarme</a>
+      </div>
+      <ul class="hero-stats">
+        <li><span class="stat-num">~5</span><span class="stat-label">años en tecnología</span></li>
+        <li><span class="stat-num">2</span><span class="stat-label">años en QA automation</span></li>
+        <li><span class="stat-num">Web · Mobile</span><span class="stat-label">Playwright &amp; Appium</span></li>
+      </ul>
+    </div>
+    <div class="hero-panel" aria-hidden="true">
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+          <span class="terminal-title">qa_suite.py</span>
+        </div>
+        <pre class="terminal-body"><code><span class="tk-key">def</span> <span class="tk-fn">test_checkout_flow</span>(page):
+    <span class="tk-cmt"># smoke · e2e · self-healing</span>
+    page.<span class="tk-fn">goto</span>(BASE_URL)
+    page.<span class="tk-fn">get_by_role</span>(<span class="tk-str">"button"</span>, name=<span class="tk-str">"Comprar"</span>).<span class="tk-fn">click</span>()
+    <span class="tk-key">assert</span> page.<span class="tk-fn">is_visible</span>(<span class="tk-str">"#order-success"</span>)
+    <span class="tk-cmt"># ✓ passed in 1.2s</span></code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section container">
+    <h2 class="section-title"><span class="section-num">01</span> Sobre mí</h2>
+    <div class="about-grid">
+      <p class="about-text">
+        Soy Ingeniero en Software (Universidad Técnica del Norte, Ibarra-Ecuador) con cerca de
+        5 años de experiencia en tecnología: los primeros años en desarrollo full stack y,
+        desde 2024, enfocado de lleno en QA Automation. Actualmente estoy basado en
+        <strong>Quito, Ecuador</strong>.
+      </p>
+      <p class="about-text">
+        Me especializo en construir ecosistemas de testing para web y mobile (Playwright /
+        Appium) conectados con Jira, Figma y documentación técnica vía RAG, y en llevar la
+        automatización un paso más allá con IA: locators auto-correctivos, clasificación
+        automática de fallos (cosmético vs. crítico) y reducción de falsos negativos en el
+        pipeline de CI/CD.
+      </p>
+      <div class="about-highlight">
+        <p class="highlight-kicker">Logro destacado</p>
+        <p>
+          Diseñé e implementé una arquitectura de <strong>QA Agéntico y Self-Healing con IA</strong>
+          (Gemini 2.5 Flash) que auto-corrige locators rotos en la UI y redujo drásticamente
+          los falsos negativos en el pipeline de pruebas.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section container">
+    <h2 class="section-title"><span class="section-num">02</span> Experiencia</h2>
+    <ol class="timeline">
+
+      <li class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>QA Engineer</h3>
+            <span class="timeline-period">TIPTI S.A. · 2024 – 2026</span>
+          </div>
+          <ul class="timeline-list">
+            <li>Diseñé una arquitectura de QA Agéntico y Self-Healing con IA (Gemini 2.5 Flash) para auto-corregir locators rotos en la UI.</li>
+            <li>Construí un ecosistema Web &amp; Mobile (Playwright / Appium) con contexto RAG conectando Jira, Figma y documentación técnica.</li>
+            <li>Implementé reporting inteligente con análisis de causa raíz, clasificando errores entre cosméticos y críticos.</li>
+            <li>Pruebas funcionales y de integración en módulos de facturación e informes financieros.</li>
+            <li>Monitoreo de rendimiento con Datadog y liderazgo de estrategia de pruebas bajo Scrum.</li>
+          </ul>
+          <ul class="timeline-tags">
+            <li>Python</li><li>Playwright</li><li>Appium</li><li>Selenium</li><li>SerenityBDD</li><li>Postman</li><li>JMeter</li><li>Karate</li><li>X-Ray</li><li>Datadog</li><li>Jira</li><li>Scrum</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Oficial de Seguridad de la Información</h3>
+            <span class="timeline-period">Kruger Corporation S.A.S · 2023 (3 meses)</span>
+          </div>
+          <ul class="timeline-list">
+            <li>Administración y coordinación del proceso de Seguridad Informática.</li>
+            <li>Desarrollo de un Plan de Seguridad de la Información y de Respuesta a Incidentes.</li>
+            <li>Coordinación de auditorías periódicas de prácticas de seguridad.</li>
+          </ul>
+          <ul class="timeline-tags">
+            <li>ISO 27001:2022</li><li>Splunk</li><li>Nessus</li><li>OpenVAS</li><li>Qualys</li><li>Scrum</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Desarrollador Full Stack</h3>
+            <span class="timeline-period">Arca Travel · 2023 (3 meses)</span>
+          </div>
+          <ul class="timeline-list">
+            <li>Ciclo completo de desarrollo de una app de RRHH en Java, desde requisitos hasta producción.</li>
+            <li>Sistema de gestión de inventario con Python y Django.</li>
+            <li>Plataforma de seguimiento de proyectos colaborativos con Angular y Node.js.</li>
+            <li>Sistema de reservas para agencia de viajes con PHP y MySQL.</li>
+          </ul>
+          <ul class="timeline-tags">
+            <li>Java Spring Boot</li><li>Python</li><li>Django</li><li>Angular</li><li>Node.js</li><li>PHP</li><li>MySQL</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="timeline-item">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Desarrollador Junior</h3>
+            <span class="timeline-period">Portada EC · 2020 – 2023 (3 años 4 meses)</span>
+          </div>
+          <ul class="timeline-list">
+            <li>Levantamiento de requisitos, desarrollo, mantenimiento, pruebas y validación de un sitio de noticias.</li>
+            <li>Responsable de integridad, seguridad, rendimiento, backups y optimización de consultas.</li>
+            <li>Mejora continua de velocidad de carga y eficiencia del sitio.</li>
+          </ul>
+          <ul class="timeline-tags">
+            <li>PHP</li><li>Node.js</li><li>Angular</li><li>JavaScript</li><li>PostgreSQL</li><li>Git</li>
+          </ul>
+        </div>
+      </li>
+
+    </ol>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section container">
+    <h2 class="section-title"><span class="section-num">03</span> Habilidades</h2>
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <h3>QA &amp; Automation</h3>
+        <ul class="chip-list">
+          <li>Python</li><li>Playwright</li><li>Appium</li><li>Selenium</li><li>SerenityBDD</li><li>Cypress</li><li>Karate</li><li>Postman</li><li>Apache JMeter</li><li>X-Ray</li><li>Datadog</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>IA aplicada a QA</h3>
+        <ul class="chip-list">
+          <li>Gemini 2.5 Flash</li><li>Self-healing tests</li><li>RAG</li><li>Análisis de causa raíz automático</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>Desarrollo</h3>
+        <ul class="chip-list">
+          <li>JavaScript</li><li>PHP</li><li>Java</li><li>HTML5</li><li>CSS3</li><li>Angular</li><li>Node.js</li><li>Django</li><li>React</li><li>Vue.js</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>Datos</h3>
+        <ul class="chip-list">
+          <li>MySQL</li><li>PostgreSQL</li><li>SQL Server</li><li>SQL / PL-SQL</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>Metodologías &amp; herramientas</h3>
+        <ul class="chip-list">
+          <li>Scrum</li><li>Kanban</li><li>Jira</li><li>Git &amp; GitHub</li><li>CI/CD</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <h3>Seguridad</h3>
+        <ul class="chip-list">
+          <li>ISO 27001:2022</li><li>Splunk</li><li>Nessus</li><li>OpenVAS</li><li>Qualys</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION & CERTIFICATIONS -->
+  <section id="education" class="section container">
+    <h2 class="section-title"><span class="section-num">04</span> Educación &amp; Certificaciones</h2>
+    <div class="edu-grid">
+      <div class="edu-main">
+        <h3>Ingeniería en Software</h3>
+        <p class="edu-sub">Universidad Técnica del Norte (UTN) · Ibarra, Ecuador · 2018 – 2023</p>
+      </div>
+      <ul class="cert-list">
+        <li><span class="cert-name">Scrum Foundation Professional Certificate</span><span class="cert-org">CertiProf · 2022</span></li>
+        <li><span class="cert-name">Cypress Avanzado</span><span class="cert-org">Platzi · 2024</span></li>
+        <li><span class="cert-name">FrontEnd Web Developer</span><span class="cert-org">Udemy · 2024</span></li>
+        <li><span class="cert-name">Especialización en Gestión de Proyectos</span><span class="cert-org">Udemy · 2024</span></li>
+        <li><span class="cert-name">Introducción a la Ciberseguridad</span><span class="cert-org">Cisco Networking Academy · 2021</span></li>
+        <li><span class="cert-name">JavaScript de Cero a Experto</span><span class="cert-org">Udemy · 2023</span></li>
+        <li><span class="cert-name">HTML5 &amp; CSS3 Complete Course</span><span class="cert-org">Udemy · 2023</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section container">
+    <h2 class="section-title"><span class="section-num">05</span> Proyectos</h2>
+    <p class="section-intro">Estoy documentando mis proyectos de QA uno por uno. Muy pronto vas a encontrar acá casos de estudio con el framework, la estrategia de pruebas y resultados de cada repo.</p>
+    <div class="projects-grid" id="projectsGrid">
+      <div class="project-card project-card--placeholder">
+        <div class="placeholder-icon">＋</div>
+        <p>Próximo proyecto en camino</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section container">
+    <h2 class="section-title"><span class="section-num">06</span> Contacto</h2>
+    <div class="contact-grid">
+      <p class="contact-lead">¿Buscás sumar a alguien que combine desarrollo y QA automation con IA? Hablemos.</p>
+      <ul class="contact-list">
+        <li>
+          <a href="mailto:thiago_85@yahoo.com">
+            <span class="contact-icon">✉</span> thiago_85@yahoo.com
+          </a>
+        </li>
+        <li>
+          <a href="tel:+593969375530">
+            <span class="contact-icon">☎</span> +593 96 937 5530
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/santiago-guzmán-b1698a207" target="_blank" rel="noopener noreferrer">
+            <span class="contact-icon">in</span> LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/thiaguinto01" target="_blank" rel="noopener noreferrer">
+            <span class="contact-icon">⌥</span> GitHub
+          </a>
+        </li>
+        <li class="contact-location">
+          <span class="contact-icon">⌖</span> Quito, Ecuador
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Santiago Guzmán · QA Automation Engineer</p>
+    <a href="#top" class="back-to-top">Volver arriba ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
