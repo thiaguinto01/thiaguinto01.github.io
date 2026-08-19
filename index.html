@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Santiago Guzmán · QA Automation Engineer</title>
-<meta name="description" content="Portfolio de Santiago Guzmán, QA Automation Engineer. Proyectos de testing, automatización web y mobile con Python, Playwright y Appium.">
+<title>Santiago Guzmán · QA Automation Engineer & AI Solutions Architect</title>
+<meta name="description" content="Portfolio de Santiago Guzmán, QA Automation Engineer & AI Solutions Architect. Proyectos de testing agéntico, self-healing y automatización web/mobile con Python, Playwright, Appium y Gemini.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
@@ -12,6 +12,8 @@
 <body>
 
 <div class="noise-overlay"></div>
+<div class="grid-bg" aria-hidden="true"></div>
+<div class="scanline" aria-hidden="true"></div>
 
 <header class="site-header" id="top">
   <nav class="nav container">
@@ -21,6 +23,7 @@
     </button>
     <ul class="nav-links" id="navLinks">
       <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#approach">Enfoque</a></li>
       <li><a href="#experience">Experiencia</a></li>
       <li><a href="#skills">Habilidades</a></li>
       <li><a href="#projects">Proyectos</a></li>
@@ -35,18 +38,24 @@
   <section class="hero container">
     <div class="hero-content">
       <p class="eyebrow"><span class="status-dot"></span> Disponible para nuevas oportunidades</p>
-      <h1>Santiago Guzmán</h1>
-      <p class="hero-role">QA Automation Engineer</p>
+      <h1 class="glitch" data-text="Santiago Guzmán">Santiago Guzmán</h1>
+      <p class="hero-role">QA Automation Engineer &amp; AI Solutions Architect</p>
       <p class="hero-desc">
         Diseño estrategias de calidad y automatizo pruebas web &amp; mobile con
-        <strong>Python, Playwright y Appium</strong>. Actualmente exploro arquitecturas de
-        <strong>QA Agéntico con IA</strong> — self-healing tests, RAG y reducción de falsos negativos
-        en pipelines de CI/CD.
+        <strong>Python, Playwright y Appium</strong>. Construyo arquitecturas de
+        <strong>QA Agéntico con IA</strong> — agentes multimodales, self-healing tests, RAG y
+        reducción de falsos negativos en pipelines de CI/CD.
       </p>
       <div class="hero-actions">
         <a href="#projects" class="btn btn-primary">Ver proyectos</a>
         <a href="#contact" class="btn btn-ghost">Contactarme</a>
       </div>
+      <ul class="hud-badges" aria-hidden="true">
+        <li><span class="hud-dot"></span>SELF-HEALING: ON</li>
+        <li><span class="hud-dot"></span>AGENTS: MULTIMODAL</li>
+        <li><span class="hud-dot"></span>PLATFORM: WEB · MOBILE</li>
+        <li><span class="hud-dot"></span>LLM: GEMINI 2.5</li>
+      </ul>
       <ul class="hero-stats">
         <li><span class="stat-num">~5</span><span class="stat-label">años en tecnología</span></li>
         <li><span class="stat-num">2</span><span class="stat-label">años en QA automation</span></li>
@@ -97,9 +106,34 @@
     </div>
   </section>
 
+  <!-- APPROACH: TESTING PYRAMID -->
+  <section id="approach" class="section container">
+    <h2 class="section-title"><span class="section-num">02</span> Cómo pienso el testing</h2>
+    <p class="section-intro">La pirámide de pruebas es de las primeras cosas que enseñan en QA — y la mayoría de equipos la tiene invertida sin saberlo. Así decido en qué capa va cada test nuevo.</p>
+    <div class="pyramid">
+      <div class="pyramid-layer" style="--w: 34%;">
+        <div class="pyramid-bar pyramid-bar--e2e"><span>E2E / UI</span><em>5–10%</em></div>
+        <p>Flujos completos de negocio de punta a punta. Pocos, lentos, pero de altísimo valor.</p>
+      </div>
+      <div class="pyramid-layer" style="--w: 56%;">
+        <div class="pyramid-bar pyramid-bar--sanity"><span>Sanity / Integration</span><em>20–30%</em></div>
+        <p>¿El módulo que se tocó en este PR o sprint sigue funcionando?</p>
+      </div>
+      <div class="pyramid-layer" style="--w: 78%;">
+        <div class="pyramid-bar pyramid-bar--smoke"><span>Smoke</span><em>15–20%</em></div>
+        <p>¿El build está vivo? Happy path de lo crítico, en cada PR.</p>
+      </div>
+      <div class="pyramid-layer" style="--w: 100%;">
+        <div class="pyramid-bar pyramid-bar--unit"><span>Unit / Component</span><em>50–60%</em></div>
+        <p>Rápidos, aislados, sin red ni navegador. La base de la suite.</p>
+      </div>
+    </div>
+    <p class="pyramid-note">Cono de helado = mucho E2E, poco unitario. Es la razón #1 por la que una suite se vuelve lenta e imposible de confiar.</p>
+  </section>
+
   <!-- EXPERIENCE -->
   <section id="experience" class="section container">
-    <h2 class="section-title"><span class="section-num">02</span> Experiencia</h2>
+    <h2 class="section-title"><span class="section-num">03</span> Experiencia</h2>
     <ol class="timeline">
 
       <li class="timeline-item">
@@ -182,7 +216,7 @@
 
   <!-- SKILLS -->
   <section id="skills" class="section container">
-    <h2 class="section-title"><span class="section-num">03</span> Habilidades</h2>
+    <h2 class="section-title"><span class="section-num">04</span> Habilidades</h2>
     <div class="skills-grid">
 
       <div class="skill-card">
@@ -232,27 +266,48 @@
 
   <!-- EDUCATION & CERTIFICATIONS -->
   <section id="education" class="section container">
-    <h2 class="section-title"><span class="section-num">04</span> Educación &amp; Certificaciones</h2>
-    <div class="edu-grid">
-      <div class="edu-main">
-        <h3>Ingeniería en Software</h3>
-        <p class="edu-sub">Universidad Técnica del Norte (UTN) · Ibarra, Ecuador · 2018 – 2023</p>
+    <h2 class="section-title"><span class="section-num">05</span> Educación &amp; Certificaciones</h2>
+    <div class="edu-main">
+      <h3>Ingeniería en Software</h3>
+      <p class="edu-sub">Universidad Técnica del Norte (UTN) · Ibarra, Ecuador · 2018 – 2023</p>
+    </div>
+
+    <div class="cert-groups">
+      <div class="cert-group">
+        <h4 class="cert-group-title"><span class="cert-group-dot cert-group-dot--ai"></span>IA &amp; Cloud</h4>
+        <ul class="cert-list">
+          <li><span class="cert-name">Certificación Claude Code &amp; MCP</span><span class="cert-org">Anthropic · 2026</span></li>
+          <li><span class="cert-name">Desarrollo con IA (Workshop)</span><span class="cert-org">BIG School · 2026</span></li>
+          <li><span class="cert-name">Prompt Design in Vertex AI — Skill Badge</span><span class="cert-org">Google Cloud · 2025</span></li>
+          <li><span class="cert-name">Get Started with Google Workspace Tools</span><span class="cert-org">Google · 2025</span></li>
+          <li><span class="cert-name">Functions, Formulas &amp; Charts in Google Sheets</span><span class="cert-org">Google · 2025</span></li>
+        </ul>
       </div>
-      <ul class="cert-list">
-        <li><span class="cert-name">Scrum Foundation Professional Certificate</span><span class="cert-org">CertiProf · 2022</span></li>
-        <li><span class="cert-name">Cypress Avanzado</span><span class="cert-org">Platzi · 2024</span></li>
-        <li><span class="cert-name">FrontEnd Web Developer</span><span class="cert-org">Udemy · 2024</span></li>
-        <li><span class="cert-name">Especialización en Gestión de Proyectos</span><span class="cert-org">Udemy · 2024</span></li>
-        <li><span class="cert-name">Introducción a la Ciberseguridad</span><span class="cert-org">Cisco Networking Academy · 2021</span></li>
-        <li><span class="cert-name">JavaScript de Cero a Experto</span><span class="cert-org">Udemy · 2023</span></li>
-        <li><span class="cert-name">HTML5 &amp; CSS3 Complete Course</span><span class="cert-org">Udemy · 2023</span></li>
-      </ul>
+
+      <div class="cert-group">
+        <h4 class="cert-group-title"><span class="cert-group-dot cert-group-dot--qa"></span>QA &amp; Gestión</h4>
+        <ul class="cert-list">
+          <li><span class="cert-name">Scrum Foundation Professional Certificate</span><span class="cert-org">CertiProf · 2022</span></li>
+          <li><span class="cert-name">Cypress Avanzado</span><span class="cert-org">Platzi · 2024</span></li>
+          <li><span class="cert-name">Especialización en Gestión de Proyectos</span><span class="cert-org">Udemy · 2024</span></li>
+          <li><span class="cert-name">Introducción a la Ciberseguridad</span><span class="cert-org">Cisco Networking Academy · 2021</span></li>
+        </ul>
+      </div>
+
+      <div class="cert-group">
+        <h4 class="cert-group-title"><span class="cert-group-dot cert-group-dot--dev"></span>Desarrollo Web</h4>
+        <ul class="cert-list">
+          <li><span class="cert-name">FrontEnd Web Developer</span><span class="cert-org">Udemy · 2024</span></li>
+          <li><span class="cert-name">JavaScript de Cero a Experto</span><span class="cert-org">Udemy · 2023</span></li>
+          <li><span class="cert-name">HTML5 &amp; CSS3 Complete Course</span><span class="cert-org">Udemy · 2023</span></li>
+        </ul>
+      </div>
     </div>
   </section>
 
   <!-- PROJECTS -->
   <section id="projects" class="section container">
-    <h2 class="section-title"><span class="section-num">05</span> Proyectos</h2>
+    <h2 class="section-title"><span class="section-num">06</span> Proyectos</h2>
     <p class="section-intro">Estoy documentando mis proyectos de QA uno por uno. Muy pronto vas a encontrar acá casos de estudio con el framework, la estrategia de pruebas y resultados de cada repo.</p>
     <div class="projects-grid" id="projectsGrid">
       <div class="project-card project-card--placeholder">
@@ -264,7 +319,7 @@
 
   <!-- CONTACT -->
   <section id="contact" class="section container">
-    <h2 class="section-title"><span class="section-num">06</span> Contacto</h2>
+    <h2 class="section-title"><span class="section-num">07</span> Contacto</h2>
     <div class="contact-grid">
       <p class="contact-lead">¿Buscás sumar a alguien que combine desarrollo y QA automation con IA? Hablemos.</p>
       <ul class="contact-list">
