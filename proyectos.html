@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyectos · Santiago Guzmán</title>
+<meta name="description" content="Casos de estudio de los frameworks de automatización QA de Santiago Guzmán (en construcción).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="noise-overlay"></div>
+<div class="grid-bg" aria-hidden="true"></div>
+<div class="scanline" aria-hidden="true"></div>
+<header class="site-header" id="top">
+  <nav class="nav container">
+    <a href="index.html" class="logo">SG<span class="logo-dot">.</span><span class="logo-tag">qa</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="sobre-mi.html">Sobre mí</a></li>
+      <li><a href="enfoque.html">Enfoque</a></li>
+      <li><a href="experiencia.html">Experiencia</a></li>
+      <li><a href="habilidades.html">Habilidades</a></li>
+      <li><a href="proyectos.html" class="active">Proyectos</a></li>
+      <li><a href="contacto.html" class="nav-cta">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="section container">
+    <h2 class="section-title"><span class="section-num">06</span> Proyectos</h2>
+    <p class="section-intro">Estoy documentando mis proyectos de QA uno por uno. Muy pronto vas a encontrar acá casos de estudio con el framework, la estrategia de pruebas y resultados de cada repo.</p>
+    <div class="projects-grid" id="projectsGrid">
+      <div class="project-card project-card--placeholder">
+        <div class="placeholder-icon">＋</div>
+        <p>Próximo proyecto en camino</p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Santiago Guzmán · QA Automation Engineer</p>
+    <a href="#top" class="back-to-top">Volver arriba ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
